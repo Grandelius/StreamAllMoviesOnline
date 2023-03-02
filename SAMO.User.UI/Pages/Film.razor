@@ -1,0 +1,76 @@
+﻿@page "/film/{Id:int}"
+@inject IUserService UserService
+
+
+<div class="d-flex flex-column">
+    <div class="MarqueeImageUrl">
+        <div class="d-flex align-items-start flex-column mb-3" style="background-image:url('@Model.MarqueeImageUrl'); height: 800px; width:1450px; background-size: cover;">
+            <div class="mb-auto p-2">
+                <a class="btn btn-primary rounded-5 mt-2" style="display: table; margin-left: 1rem;" href="/">
+                    <i class="oi oi-arrow-left"></i><span class="vertical-align" style="text-align: start;"> Back to Dashboard</span>
+                </a>
+            </div>
+            <div class="" style="margin-bottom: 0;">
+                <img class=" rounded-3" src="@Model.ImageUrl" alt="FilmUrl" style=" padding-left:0; padding-bottom: 0; margin-left: 4rem; height: 172px; padding: 0rem; width: 304px; text-align: start;">
+            </div>
+            <div style="width: 600px; background-color: #000000d6; margin-left: 4rem; margin-bottom: 1rem;">
+                <div class="d-flex mb-1">
+                    <div class="p-2">
+                        <a class="btn btn-dark rounded-5 " style=" width: 60px; display: table;" href="/film/play/@Model.Id">
+                            <span class="vertical-align" style="text-align: start;">Play</span>
+                        </a>
+                    </div>
+                    <div class="p-2">
+                        <h5 class="" style=" padding-top: 5px; align-content:center; color: white;">@Model.Title</h5>
+                    </div>
+                    <div class="p-2">
+                        <h6 class="" style=" padding-top: 8px; align-content:center; color: white;">Released: @Model.Released.Year</h6>
+                    </div>
+                </div>
+                <div class="d-flex mb-1">
+                    <div class="">
+                        <h6 style="margin-left: 1rem; color:white;">
+                            Director: @Model.Director.Name
+                        </h6>
+                    </div>
+                    <div class="">
+                        <h6 style="margin-left: 1rem; color:white;">
+                            Genre: @foreach (var genre in Model.Genres)
+                            {
+                                <label style="margin-right: 0.3rem;">@genre.Name </label>
+                            }
+                        </h6>
+                    </div>
+                </div>
+                <div class="">
+                    <h6 style="margin-left: 1rem; color: white;"> Description: @Model.Description</h6>
+                </div>
+            </div>
+            <div class="text-start">
+                <h2 class="text-white" style="margin-left: 1rem; padding: 2px; background: #000000d6;">
+                    Similar Films
+                </h2>
+            </div>
+            <div class="d-flex flex-wrap justify-content-start">
+                @foreach (var film in Model.SimilarFilms)
+                {
+                    <SimilarFilm Film="@film" />
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+@code {
+    [Parameter] public int? Id { get; set; }
+    public FilmDTO Model { get; set; } = new FilmDTO();
+
+
+    protected override async Task OnParametersSetAsync()
+    {
+        Model = await UserService.GetFilmAsync(Id);
+    }
+}

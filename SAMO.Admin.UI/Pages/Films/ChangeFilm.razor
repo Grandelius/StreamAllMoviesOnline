@@ -1,0 +1,88 @@
+﻿@inject IAdminService AdminService
+
+<div class="d-xl-flex justify-content-center">
+    <EditForm Model="@Model" OnValidSubmit="@OnFormSubmit" class="mb-5 border border-1 border-secondary p-2 w-25">
+        <DataAnnotationsValidator />
+        <h4>@Page Film</h4>
+        <div class="mb-3">
+            @if (Page.Equals(PageType.Delete))
+            {
+                <InputText id="title" class="form-control me-2" @bind-Value="Model.Title" disabled placeholder="Title"></InputText>
+            }
+            else
+            {
+                <InputText id="title" class="form-control me-2" @bind-Value="Model.Title" placeholder="Title"></InputText>
+            }
+            <ValidationMessage For="@(() => Model.Title)" />
+        </div>
+        @if (!Page.Equals(PageType.Delete))
+        {
+            <div class="mb-3">
+                <InputText id="description" class="form-control me-2" @bind-Value="Model.Description" placeholder="Description"></InputText>
+                <ValidationMessage For="@(() => Model.Description)" />
+            </div>
+            <div class="mb-3">
+                <InputText id="image-url" class="form-control me-2" @bind-Value="Model.ImageUrl" placeholder="Image Url"></InputText>
+                <ValidationMessage For="@(() => Model.ImageUrl)" />
+            </div>
+            <div class="mb-3">
+                <InputText id="film-url" class="form-control me-2" @bind-Value="Model.FilmUrl" placeholder="Film Url"></InputText>
+                <ValidationMessage For="@(() => Model.FilmUrl)" />
+            </div>
+            <div class="mb-3">
+                <InputText id="marquee-image-url" class="form-control me-2" @bind-Value="Model.MarqueeImageUrl" placeholder="Marquee image Url"></InputText>
+                <ValidationMessage For="@(() => Model.FilmUrl)" />
+            </div>
+
+            <div class="mb-3">
+                <InputDate id="Released" class="form-control me-2" @bind-Value="Model.Released" placeholder="Released"></InputDate>
+                <ValidationMessage For="@(() => Model.Released)" />
+            </div>
+
+  
+            <InputSelect @bind-Value="Model.DirectorId" class="form-control mb-3">
+                <option value=0>Director ...</option>
+                @foreach (var director in Directors)
+                {
+                    <option value="@director.Id">@director.Name</option>
+                }
+            </InputSelect>
+
+
+        }
+        <button type="submit" class="btn btn-@(Page.Equals(PageType.Delete) ? "danger" : "primary") rounded-0">@Page</button>
+    </EditForm>
+</div>
+
+@code {
+    [Parameter] public FilmDTO Model { get; set; } = new();
+    [Parameter] public string Page { get; set; } = string.Empty;
+    [Parameter] public EventCallback<string> OnChanged { get; set; }
+    List<DirectorDTO> Directors { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Directors = await AdminService.GetAsync<DirectorDTO>("director");
+    }
+
+    private async Task OnFormSubmit()
+    {
+        try
+        {
+
+            if (Page.Equals(PageType.Create))
+                await AdminService.CreateAsync<FilmDTO>("film", Model);
+            else if (Page.Equals(PageType.Edit))
+                await AdminService.EditAsync<FilmDTO>($"film/{Model.Id}", Model);
+            else if (Page.Equals(PageType.Delete))
+                await AdminService.DeleteAsync<FilmDTO>($"film/{Model.Id}");
+
+            await OnChanged.InvokeAsync("");
+        }
+        catch
+        {
+            await OnChanged.InvokeAsync("Couldnt Create/Edit/Delete the film");
+        }
+    }
+
+}

@@ -1,0 +1,89 @@
+﻿@inject IAdminService AdminService
+
+<div class="d-xl-flex justify-content-center align-content-xxl-end" >
+    <EditForm Model="@Model" OnValidSubmit="@OnFormSubmit" class="mb-5 border border-1 border-secondary p-2 w-25">
+        <DataAnnotationsValidator />
+        <h4>@Page Similar films</h4>
+        <div class="mb-3">
+            <InputText id="title" class="form-control me-2" @bind-Value="Model.Title" disabled placeholder="Title"></InputText>
+        </div>
+        @if (Page.Equals(PageType.Delete))
+        {
+            <div class="mb-3">
+                <InputSelect @bind-Value="SelectedFilms">
+                    <option value=0>Genres ...</option>
+                    @foreach (var film in Model.SimilarFilms)
+                    {
+                        <option value="@film.SimilarFilmId">@film.Similar.Title.Truncate(20)</option>
+                    }
+                </InputSelect>
+            </div>
+        }
+        else
+        {
+            <div class="mb-3">
+                <InputSelect  @bind-Value="SelectedFilms" >
+                    <option value=0>Films ...</option>
+                    @foreach (var film in Films)
+                    {
+                        <option value="@film.Id">@film.Title.Truncate(20)</option>
+                    }
+                </InputSelect>
+            </div>
+            <div class="mb-3">
+                <label>
+                    <InputCheckbox @bind-Value="SimilarFilm.BothDirections" />
+                    Create connection both ways
+                </label>
+            </div>
+        }
+        <button type="submit" class="btn btn-@(Page.Equals(PageType.Delete) ? "danger" : "primary") rounded-0">@Page</button>
+    </EditForm>
+</div>
+
+
+@code {
+    [Parameter] public FilmDTO Model { get; set; } = new();
+    [Parameter] public string Page { get; set; } = string.Empty;
+    [Parameter] public EventCallback<string> OnChanged { get; set; }
+    public List<FilmDTO> Films { get; set; } = new();
+    public int[] SelectedFilms { get; set; } = new int[] { };
+    public SimilarFilmsDTO SimilarFilm { get; set; } = new();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        Films = await AdminService.GetAsync<FilmDTO>("film");
+    }
+
+    private async Task OnFormSubmit()
+    {
+        try
+        {
+            SimilarFilm.FilmId = Model.Id;
+
+            if (Page.Equals(PageType.Create))
+            {
+                foreach (var selected in SelectedFilms)
+                {
+                    SimilarFilm.SimilarFilmId = selected;
+                    await AdminService.CreateAsync<SimilarFilmsDTO>("similarfilms", SimilarFilm);
+                }
+            }
+            else if (Page.Equals(PageType.Delete))
+
+                foreach (var selected in SelectedFilms)
+                {
+                    SimilarFilm.BothDirections = true;
+                    SimilarFilm.SimilarFilmId = selected;
+                    await AdminService.DeleteDTO<SimilarFilmsDTO>($"similarfilms/delete", SimilarFilm);
+                }
+              
+            await OnChanged.InvokeAsync("");
+        }
+        catch
+        {
+            await OnChanged.InvokeAsync("Couldnt Create/Delete the FilmGenre");
+        }
+    }
+}

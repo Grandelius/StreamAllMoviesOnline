@@ -1,0 +1,11 @@
+﻿global using Microsoft.EntityFrameworkCore;
+global using AutoMapper;
+global using System.ComponentModel.DataAnnotations;
+global using SAMO.Movie.Database.Interfaces;
+global using SAMO.Movie.Database.Contexts;
+global using System.Linq.Expressions;
+global using SAMO.Common.DTOs;
+global using SAMO.Movie.Database.Services;
+global using SAMO.Movie.Database.Entities;
+global using Microsoft.AspNetCore.Mvc;
+global using SAMO.Common.Services;

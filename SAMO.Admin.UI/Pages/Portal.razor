@@ -1,0 +1,33 @@
+﻿@page "/{Route}"
+<h3>@Route</h3>
+
+@if (Route.Equals(Routes.Films))
+{
+	<FilmsPortal />
+}
+
+@if (Route.Equals(Routes.Directors))
+{
+	<DirectorsPortal />
+}
+
+@if (Route.Equals(Routes.Genres))
+{
+	<GenresPortal />
+}
+
+@if (Route.Equals(Routes.FilmGenres))
+{
+	<FilmGenresPortal />
+}
+
+@if (Route.Equals(Routes.SimilarFilms))
+{
+	<SimilarFilmsPortal />
+}
+
+
+
+@code {
+	[Parameter] public string Route { get; set; } = "";
+}

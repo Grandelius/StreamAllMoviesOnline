@@ -1,0 +1,52 @@
+﻿@inject IAdminService AdminService
+
+<div class="d-xl-flex justify-content-center">
+    <EditForm Model="@Model" OnValidSubmit="@OnFormSubmit" class="mb-5 border border-1 border-secondary p-2 w-25">
+        <DataAnnotationsValidator />
+        <h4>@Page Genre</h4>
+        <div class="mb-3">
+            @if (Page.Equals(PageType.Delete))
+            {
+                <InputText id="title" class="form-control me-2" @bind-Value="Model.Name" disabled placeholder="Title"></InputText>
+            }
+            else
+            {
+                <InputText id="title" class="form-control me-2" @bind-Value="Model.Name" placeholder="Title"></InputText>
+            }
+            <ValidationMessage For="@(() => Model.Name)" />
+        </div>
+        <button type="submit" class="btn btn-@(Page.Equals(PageType.Delete) ? "danger" : "primary") rounded-0">@Page</button>
+    </EditForm>
+</div>
+
+@code {
+    [Parameter] public GenreDTO Model { get; set; } = new();
+    [Parameter] public string Page { get; set; } = string.Empty;
+    [Parameter] public EventCallback<string> OnChanged { get; set; }
+    List<GenreDTO> Genres { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Genres = await AdminService.GetAsync<GenreDTO>("genre");
+    }
+
+    private async Task OnFormSubmit()
+    {
+        try
+        {
+
+            if (Page.Equals(PageType.Create))
+                await AdminService.CreateAsync<GenreDTO>("genre", Model);
+            else if (Page.Equals(PageType.Edit))
+                await AdminService.EditAsync<GenreDTO>($"genre/{Model.Id}", Model);
+            else if (Page.Equals(PageType.Delete))
+                await AdminService.DeleteAsync<GenreDTO>($"genre/{Model.Id}");
+
+            await OnChanged.InvokeAsync("");
+        }
+        catch
+        {
+            await OnChanged.InvokeAsync("Couldnt Create/Edit/Delete the film");
+        }
+    }
+}

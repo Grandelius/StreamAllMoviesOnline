@@ -1,0 +1,66 @@
+﻿@inject IAdminService AdminService
+
+@if (!string.IsNullOrEmpty(Alert))
+{
+	<div class="d-flex">
+		<div class="alert alert-danger alert-dismissible fade show" role="alert">
+			<strong>@Alert</strong>
+			<button type="button" @onclick="CloseAlert" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+	</div>
+}
+
+@if (Navigation == PageType.Create)
+{
+	<ChangeFilmGenre Page="@Navigation" OnChanged="OnChanged" Model="Film"></ChangeFilmGenre>
+}
+@if (Navigation == PageType.Delete)
+{
+	<ChangeFilmGenre Page="@Navigation" OnChanged="OnChanged" Model="Film"> </ChangeFilmGenre>
+}
+
+<div class="d-flex me-1">
+	<a href="/" class="btn btn-outline-secondary rounded-0 me-1">Home</a>
+	<button type="button" class="btn btn-outline-primary rounded-0 me-1" @onclick="()=>ChangePageType(PageType.Index)">Index</button>
+</div>
+
+<FilmGenresIndex OnClick="OnClick" Model="Model"></FilmGenresIndex>
+
+
+@code {
+
+	public string Alert = "";
+	string Navigation { get; set; } = PageType.Index;
+	public List<FilmDTO> Model { get; set; } = new();
+	public FilmDTO Film { get; set; } = new();
+	public List<GenreDTO> Genres {get; set;} = new();
+	public FilmGenreDTO FilmGenre { get; set; } = new();
+
+	protected override async Task OnInitializedAsync()
+	{
+		Model = await AdminService.GetAsync<FilmDTO>("film");
+		Genres = await AdminService.GetAsync<GenreDTO>("genre");
+
+	}
+
+	async Task OnClick(ClickModel model)
+	{
+		if (model.PageType.Equals(PageType.Create) || model.PageType.Equals(PageType.Delete))
+			Film = await AdminService.SingleAsync<FilmDTO>($"film/{model.Id}") ?? new();
+
+		ChangePageType(model.PageType);
+	}
+
+
+	void ChangePageType(string pageType) => Navigation = pageType;
+
+	void CloseAlert() => Alert = "";
+
+	async Task OnChanged(string message)
+	{
+		Alert = message;
+		Model = await AdminService.GetAsync<FilmDTO>("film");
+		ChangePageType(PageType.Index);
+	}
+
+}

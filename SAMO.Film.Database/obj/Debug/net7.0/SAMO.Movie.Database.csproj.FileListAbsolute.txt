@@ -1,0 +1,17 @@
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\bin\Debug\net7.0\SAMO.Movie.Database.deps.json
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\bin\Debug\net7.0\SAMO.Movie.Database.runtimeconfig.json
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\bin\Debug\net7.0\SAMO.Movie.Database.dll
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\bin\Debug\net7.0\SAMO.Movie.Database.pdb
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\bin\Debug\net7.0\SAMO.Common.dll
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\bin\Debug\net7.0\SAMO.Common.pdb
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\obj\Debug\net7.0\SAMO.Movie.Database.csproj.AssemblyReference.cache
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\obj\Debug\net7.0\SAMO.Movie.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\obj\Debug\net7.0\SAMO.Movie.Database.AssemblyInfoInputs.cache
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\obj\Debug\net7.0\SAMO.Movie.Database.AssemblyInfo.cs
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\obj\Debug\net7.0\SAMO.Movie.Database.csproj.CoreCompileInputs.cache
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\obj\Debug\net7.0\SAMO.Movie.Database.csproj.CopyComplete
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\obj\Debug\net7.0\SAMO.Movie.Database.dll
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\obj\Debug\net7.0\refint\SAMO.Movie.Database.dll
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\obj\Debug\net7.0\SAMO.Movie.Database.pdb
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\obj\Debug\net7.0\SAMO.Movie.Database.genruntimeconfig.cache
+C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Film.Database\obj\Debug\net7.0\ref\SAMO.Movie.Database.dll

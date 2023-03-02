@@ -1,0 +1,33 @@
+﻿@page "/"
+@inject IUserService UserService
+
+<PageTitle>Dashboard</PageTitle>
+<div class="bg-black">
+<h1 class="text-danger bg-black" style="margin-bottom: 0rem; text-align: center; font-family: fantasy; border: double;">Stream All Movies Online</h1>
+</div>
+
+
+<div class="d-flex flex-column bg-black">
+    @foreach (var genre in Genres)
+    {
+        <div class="text-start rounded-2 bg-black">
+            <h2 class="text-white" style="margin-left: 1rem;">@genre.Name </h2>
+        </div>
+        <div class="d-flex flex-wrap justify-content-start">
+            @foreach (var film in genre.Films)
+            {
+                <FilmImage Film="@film" />
+            }
+        </div>
+    }
+</div>
+
+
+@code {
+    public List<GenreDTO> Genres { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Genres = await UserService.GetGenresAsync<GenreDTO>();
+    }
+}

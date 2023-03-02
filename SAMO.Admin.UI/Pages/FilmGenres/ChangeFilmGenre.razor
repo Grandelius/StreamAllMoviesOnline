@@ -1,0 +1,83 @@
+﻿@inject IAdminService AdminService
+
+<div class="d-xl-flex justify-content-center">
+    <EditForm Model="@Model" OnValidSubmit="@OnFormSubmit" class="mb-5 border border-1 border-secondary p-2 w-25">
+        <DataAnnotationsValidator />
+        <h4>@Page FilmGenre</h4>
+        <div class="mb-3">
+            <InputText id="title" class="form-control me-2" @bind-Value="Model.Title" disabled placeholder="Title"></InputText>
+        </div>
+        @if (Page.Equals(PageType.Delete))
+        {
+            <div class="mb-3">
+                <InputSelect @bind-Value="SelectedGenres">
+                    <option value=0>Genres ...</option>
+                    @foreach (var genre in Model.Genres)
+                    {
+                        <option value="@genre.Id">@genre.Name</option>
+                    }
+                </InputSelect>
+            </div>
+        }
+        else
+        {
+            <div class="mb-3 flex-row">
+                <label class="align-top">Select genres</label>
+                <InputSelect  @bind-Value="SelectedGenres">
+                    <option value=0 disabled>Genres ...</option>
+                    @foreach (var genre in Genres)
+                    {
+                        <option value="@genre.Id">@genre.Name</option>
+                    }
+                </InputSelect>
+            </div>
+        }
+        <button type="submit" class="btn btn-@(Page.Equals(PageType.Delete) ? "danger" : "primary") rounded-0">@Page</button>
+    </EditForm>
+</div>
+
+
+@code {
+    [Parameter] public FilmDTO Model { get; set; } = new();
+    [Parameter] public string Page { get; set; } = string.Empty;
+    [Parameter] public EventCallback<string> OnChanged { get; set; }
+    public List<GenreDTO> Genres { get; set; } = new();
+    public int[] SelectedGenres { get; set; } = new int[] { };
+    public FilmGenreDTO FilmGenre { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Genres = await AdminService.GetAsync<GenreDTO>("genre");
+    }
+
+    private async Task OnFormSubmit()
+    {
+        try
+        {
+            FilmGenre.FilmId = Model.Id;
+
+            if (Page.Equals(PageType.Create))
+            {
+                foreach (var selected in SelectedGenres)
+                {
+                    FilmGenre.GenreId = selected;
+                    await AdminService.CreateAsync<FilmGenreDTO>("filmgenre", FilmGenre);
+                }
+            }
+            else if (Page.Equals(PageType.Delete))
+            {
+                foreach (var selected in SelectedGenres)
+                {
+                    FilmGenre.GenreId = selected;
+                    await AdminService.DeleteDTO<FilmGenreDTO>($"filmgenre/delete", FilmGenre);
+                }
+            }
+
+            await OnChanged.InvokeAsync("");
+        }
+        catch
+        {
+            await OnChanged.InvokeAsync("Couldnt Create/Delete the FilmGenre");
+        }
+    }
+}

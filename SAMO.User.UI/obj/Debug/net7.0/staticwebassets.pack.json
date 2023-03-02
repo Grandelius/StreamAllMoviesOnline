@@ -1,0 +1,177 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\obj\\Debug\\net7.0\\build-gz\\+l20YoPH.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\obj\\Debug\\net7.0\\scopedcss\\bundle\\SAMO.User.UI.styles.css",
+      "PackagePath": "staticwebassets\\SAMO.User.UI.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\BumbleBee.jpg",
+      "PackagePath": "staticwebassets\\Images\\BumbleBee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\JurassicPark.jpg",
+      "PackagePath": "staticwebassets\\Images\\JurassicPark.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\LordOfTheTwoTowers.jpg",
+      "PackagePath": "staticwebassets\\Images\\LordOfTheTwoTowers.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\LordOfTheTwoTowersMarquee.jpg",
+      "PackagePath": "staticwebassets\\Images\\LordOfTheTwoTowersMarquee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\Transformers.jpg",
+      "PackagePath": "staticwebassets\\Images\\Transformers.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\TransformersMarquee.jpg",
+      "PackagePath": "staticwebassets\\Images\\TransformersMarquee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\bumblebeeMarquee.jpg",
+      "PackagePath": "staticwebassets\\Images\\bumblebeeMarquee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\fast-and-furious-7.jpg",
+      "PackagePath": "staticwebassets\\Images\\fast-and-furious-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\furious-7.jpg",
+      "PackagePath": "staticwebassets\\Images\\furious-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\hobbitMarquee.jpg",
+      "PackagePath": "staticwebassets\\Images\\hobbitMarquee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\hobbitSmaug.jpg",
+      "PackagePath": "staticwebassets\\Images\\hobbitSmaug.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\hobbitSmaugMarquee.jpg",
+      "PackagePath": "staticwebassets\\Images\\hobbitSmaugMarquee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\hobbitUnExpectedMarquee.jpg",
+      "PackagePath": "staticwebassets\\Images\\hobbitUnExpectedMarquee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\hobbitUnexpectedJourney.jpg",
+      "PackagePath": "staticwebassets\\Images\\hobbitUnexpectedJourney.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\hobbitUnexpectedJourneyMarquee.jpg",
+      "PackagePath": "staticwebassets\\Images\\hobbitUnexpectedJourneyMarquee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\hpFenixMarquee.jpg",
+      "PackagePath": "staticwebassets\\Images\\hpFenixMarquee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\hpGobletOfFire.jpg",
+      "PackagePath": "staticwebassets\\Images\\hpGobletOfFire.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\hpMarquee.jpg",
+      "PackagePath": "staticwebassets\\Images\\hpMarquee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\hpOrderOfPoenix.jpg",
+      "PackagePath": "staticwebassets\\Images\\hpOrderOfPoenix.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Images\\jurassicworldMarquee.jpg",
+      "PackagePath": "staticwebassets\\Images\\jurassicworldMarquee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\Transformers.jpg",
+      "PackagePath": "staticwebassets\\Transformers.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\ÄGARE\\source\\repos\\StreamAllMoviesOnline\\SAMO.User.UI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.SAMO.User.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.SAMO.User.UI.props",
+      "PackagePath": "build\\SAMO.User.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.SAMO.User.UI.props",
+      "PackagePath": "buildMultiTargeting\\SAMO.User.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.SAMO.User.UI.props",
+      "PackagePath": "buildTransitive\\SAMO.User.UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

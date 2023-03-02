@@ -1,0 +1,16 @@
+﻿<div style="max-width:350px;">
+    <div class="card rounded-0 m-2 bg-opacity-25" style="margin-left: 1rem; background: black;">
+        <a class="btn" style="padding: 0; max-width: 306px;" href="Film/@Film.Id">
+            <img class="card-img-top rounded img-fluid" style="height: 172px; padding: 0rem; width: 306px; " src="@Film.ImageUrl">
+        </a>
+        <div class="card-body">
+            <h5 class="card-title" style="color: white;">@Film.Title</h5>
+            @*<p class="card-text text-dark">@Film.Description.Truncate(50)</p>*@
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]public FilmDTO Film { get; set; } = new();
+
+}

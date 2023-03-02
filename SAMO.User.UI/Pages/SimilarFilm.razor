@@ -1,0 +1,16 @@
+﻿
+
+<div style="max-width:350px;">
+    <div class="card rounded-0 m-2 bg-opacity-25" style="margin-left: 1rem; background: black;">
+        <a class="btn" style="padding: 0; max-width: 306px;" href="Film/@Film.SimilarFilmId">
+            <img class="card-img-top rounded img-fluid " style="height: 172px; padding: 0rem; width: 306px;"
+            src="@Film.Similar.ImageUrl" >
+        </a>
+    </div>
+</div>
+
+@code {
+    [Parameter] public SimilarFilmsDTO Film { get; set; } = new();
+
+}
+

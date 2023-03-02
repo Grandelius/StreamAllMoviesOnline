@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "SAMO.Admin.UI/1.0.0": {
+        "dependencies": {
+          "SAMO.Common": "1.0.0"
+        },
+        "runtime": {
+          "SAMO.Admin.UI.dll": {}
+        }
+      },
+      "SAMO.Common/1.0.0": {
+        "runtime": {
+          "SAMO.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SAMO.Admin.UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SAMO.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

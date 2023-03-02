@@ -1,0 +1,117 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SAMO.Admin.UI
+build_property.RootNamespace = SAMO.Admin.UI
+build_property.ProjectDir = C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Admin.UI\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ÄGARE\source\repos\StreamAllMoviesOnline\SAMO.Admin.UI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/Directors/ChangeDirector.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlyZWN0b3JzXENoYW5nZURpcmVjdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/Directors/DirectorsIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlyZWN0b3JzXERpcmVjdG9yc0luZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/Directors/DirectorsPortal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlyZWN0b3JzXERpcmVjdG9yc1BvcnRhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/FilmGenres/ChangeFilmGenre.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsbUdlbnJlc1xDaGFuZ2VGaWxtR2VucmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/FilmGenres/FilmGenresIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsbUdlbnJlc1xGaWxtR2VucmVzSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/FilmGenres/FilmGenresPortal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsbUdlbnJlc1xGaWxtR2VucmVzUG9ydGFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/Films/ChangeFilm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsbXNcQ2hhbmdlRmlsbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/Films/FilmsIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsbXNcRmlsbXNJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/Films/FilmsPortal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsbXNcRmlsbXNQb3J0YWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/Genres/ChangeGenre.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXENoYW5nZUdlbnJlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/Genres/GenresIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXEdlbnJlc0luZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/Genres/GenresPortal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VucmVzXEdlbnJlc1BvcnRhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/Portal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9ydGFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/SimilarFilms/ChangeSimilarFilms.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2ltaWxhckZpbG1zXENoYW5nZVNpbWlsYXJGaWxtcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/SimilarFilms/SimilarFilmsIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2ltaWxhckZpbG1zXFNpbWlsYXJGaWxtc0luZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/SimilarFilms/SimilarFilmsPortal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2ltaWxhckZpbG1zXFNpbWlsYXJGaWxtc1BvcnRhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-yt5wj8pv15
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-3ezpo3ixhy
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ÄGARE/source/repos/StreamAllMoviesOnline/SAMO.Admin.UI/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

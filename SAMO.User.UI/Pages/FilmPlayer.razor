@@ -1,0 +1,26 @@
+﻿@page "/film/play/{Id:int}"
+@inject IUserService UserService
+
+<div class="d-flex align-items-center bg-black flex-column mb-3">
+<a class="btn btn-primary align-self-start rounded-0 mb-1" style="margin-left: 12rem;" href="/film/@Model.Id">
+    <i class="oi oi-arrow-left"></i><span class="vertical-align"> Back to Film</span>
+</a>
+    <div class="">
+        @if (Model.FilmUrl != null)
+        {
+            <div class="flex-row justify-content-center">
+                <iframe style="height: 640px; width: 1080px;" src="@Model.FilmUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        }
+        </div>
+</div>
+
+@code {
+    [Parameter] public int? Id { get; set; }
+    public FilmDTO Model { get; set; } = new FilmDTO();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Model = await UserService.GetFilmAsync(Id);
+    }
+}
